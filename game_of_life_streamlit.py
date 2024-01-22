@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 import time
 from scipy.signal import convolve2d
+import logging
 
 # Function to compute the next state of the game
 def next_board_state(board):
@@ -28,6 +29,8 @@ def apply_random_rule(board, frame_count):
 
 # Initialize the Streamlit app
 st.title("Game of Life with Additional Rule")
+logging.basicConfig(level=logging.INFO)
+
 
 # Set up the initial board
 board_size = st.slider("Board size", 10, 400, 200)
@@ -53,7 +56,7 @@ while True:
     # Increment the frame count
     frame_count += 1
     if frame_count<10:
-        print (frame_count)
+        logging.info(frame_count)
     
     # Sleep for a short interval to control the speed of the animation
     time.sleep(0.1)
