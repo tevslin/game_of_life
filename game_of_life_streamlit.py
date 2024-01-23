@@ -59,4 +59,4 @@ while True:
         logging.info(frame_count)
     
     # Sleep for a short interval to control the speed of the animation
-    time.sleep(0.1)
+    #time.sleep(0.1)
