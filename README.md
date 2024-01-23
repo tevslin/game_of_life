@@ -12,4 +12,4 @@ On a relatrively small grid, the simulation will usually reach a boring looping 
 
 * every five frames, randomly either set one cell on or another cell off regardless of its current state or that of its neighbors.
 
-There is a web page, also written by autogen, implemnting the modified Game of Life [here](https://exceo.typepad.com/game_of_life.html).
+There is a web page, also written by autogen, implementing the modified Game of Life [here](https://exceo.typepad.com/game_of_life.html).
