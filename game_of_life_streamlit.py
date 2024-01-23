@@ -55,7 +55,7 @@ while True:
     
     # Increment the frame count
     frame_count += 1
-    if frame_count<10:
+    if frame_count//100==0:
         logging.info(frame_count)
     
     # Sleep for a short interval to control the speed of the animation
